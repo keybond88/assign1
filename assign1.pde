@@ -12,20 +12,25 @@ int hpx=floor(random (645));
   int hpy=floor(random (481));
   int treasurex=floor(random (645));
   int treasurey=floor(random (481));
-void setup () {
+ void setup () {
   size(640,480) ;  // must use this size.
   // your code
-   bg1=loadImage("/img/bg1.png");
+  bg1=loadImage("/img/bg1.png");
   bg2=loadImage("/img/bg2.png");
   enemy=loadImage("/img/enemy.png");
   hp=loadImage("/img/hp.png");
   treasure=loadImage("/img/treasure.png");
   fighter=loadImage("/img/fighter.png");
+  
+  
+    
+  
 }
 
 void draw() {
   // your code
-   x %= 641;
+ 
+    x %= 641;
    image(bg2,x,0);
    y=x-640; 
    y %= 640   ;
@@ -38,4 +43,4 @@ void draw() {
   image(treasure,treasurex,treasurey);
   treasurex=treasurex+6;
     image(fighter,550,240);
-}
+  }
