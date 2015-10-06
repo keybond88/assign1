@@ -1,4 +1,3 @@
-/* please implement your assign1 code in this file. */
 PImage bg1;
 PImage bg2;
 PImage enemy;
@@ -13,8 +12,7 @@ int hpx=floor(random (645));
   int treasurex=floor(random (645));
   int treasurey=floor(random (481));
  void setup () {
-  size(640,480) ;  // must use this size.
-  // your code
+  size(640,480) ; 
   bg1=loadImage("/img/bg1.png");
   bg2=loadImage("/img/bg2.png");
   enemy=loadImage("/img/enemy.png");
@@ -22,15 +20,10 @@ int hpx=floor(random (645));
   treasure=loadImage("/img/treasure.png");
   fighter=loadImage("/img/fighter.png");
   
-  
-    
-  
 }
 
 void draw() {
-  // your code
- 
-    x %= 641;
+  x %= 641;
    image(bg2,x,0);
    y=x-640; 
    y %= 640   ;
