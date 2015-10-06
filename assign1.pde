@@ -38,6 +38,7 @@ void draw() {
    z=z+10;
    image(hp,hpx,hpy);
   image(treasure,treasurex,treasurey);
+  treasurex %= 641;
   treasurex=treasurex+6;
     image(fighter,550,240);
   }
