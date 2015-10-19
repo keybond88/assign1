@@ -1,4 +1,4 @@
-* please implement your assign1 code in this file. */
+/* please implement your assign1 code in this file. */
 PImage bg1;
 PImage bg2;
 PImage enemy;
