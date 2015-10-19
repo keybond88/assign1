@@ -1,4 +1,4 @@
-/* please implement your assign1 code in this file. */
+* please implement your assign1 code in this file. */
 PImage bg1;
 PImage bg2;
 PImage enemy;
@@ -12,7 +12,8 @@ int y=0;
 int z=0;
 int hpx=0;
   int hpy=0;
-  int treasurex=floor(random (641));
+  int treasurex=0;
+  int enemyy=floor(random(481));
   int treasurey=floor(random (481));
   int bloodx=floor(random(201));
  void setup () {
@@ -39,7 +40,7 @@ void draw() {
   bg1x=bg1x+5;
   bg2x=bg2x+5;
     z %= 640;
-   image(enemy,z,5);
+   image(enemy,z,enemyy);
    z=z+10;
    image(hp,hpx,hpy);
   image(treasure,treasurex,treasurey);
